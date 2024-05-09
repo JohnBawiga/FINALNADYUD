@@ -1,0 +1,303 @@
+.splitL {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the left side */
+  .leftL {
+    left: 0;
+    background-color: #fff;
+  }
+  
+  /* Control the right side */
+  .rightL {
+    right: 0;
+    background-color: #690202;
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .centeredL {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* Style the image inside the centered container, if needed */
+  .centeredL img {
+    width: 500px;
+  }
+  
+  .centeredL p{
+    color: #fff;
+  }
+  
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+    color: #690202;
+    margin-bottom: 10px;
+  }
+  
+  
+  .input-field {
+    width: 400px;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    height: 45px;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+  }
+  
+  .input-field i {
+    text-align: center;
+    line-height: 55px;
+    color: #690202;
+    transition: 0.5s;
+    font-size: 1.1rem;
+  }
+  
+  .input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #690202;
+  }
+  .input-field input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+  }
+  .btnL {
+    width: 250px;
+    background-color: #E1AC00;
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 49px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .btnL:hover {
+    background-color: #b98f04;
+  }
+  
+  .split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .left {
+    left: 0;
+    background-color: #690202;
+  }
+  
+  
+  .right {
+    right: 0;
+    background-color: white;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .centered img {
+    width: 500px;
+  }
+  .centered p{
+    color: #fff;
+  }
+  .btnL.transparent2 {
+    margin: 1;
+    background: none;
+    border: 2px solid #b98f04;
+    width: 130px;
+    height: 41px;
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+  .linkas{
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+  
+  :root{
+      --color-primary: #6f6af8;
+      --color-white: #fff;
+      --color-red: rgb(255,63,63);
+      --color-gray-100: hsl(220, 20%, 10%, 5%);
+      --color-gray-200: hsl(220, 20%, 10%, 10%);
+      --color-gray-300: hsl(220, 20%, 10%, 25%);
+      --color-gray-500: hsl(220, 20%, 10%, 50%);
+      --color-gray-700: #252542;
+      --color-gray-900: #0c0c22;
+  
+      --color-bg: hwb(240 95% 0%);
+  
+      --transition: all 300ms ease;
+  
+      --container-width-lg: 84%;
+      --container-width-md: 92%;
+      --form-width: 50%;
+  
+      --radius-1: 0.3rem;
+      --radius-2: 0.6rem;
+      --radius-3: 1rem;
+      --radius-4: 2rem;
+  }
+  
+  *{
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      box-sizing: border-box;
+  }
+  
+  body{
+      font-family: "Poppins", sans-serif;
+      background: var(--color-bg);
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: var(--color-gray-700);
+  }
+  
+  a{
+      color: var(--color-gray-700);
+      text-decoration: none;
+  }
+  
+  ul{
+      list-style: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6{
+      color: var(--color-gray-900);
+      line-height: 1.1;
+  }
+  
+  h1{
+      font-size: 2.2rem;
+  }
+  
+  h2{
+      font-size: 1.9rem;
+  }
+  
+  h3{
+      font-size: 1.3rem;
+      line-height: 1.25;
+  }
+  
+  h4{
+      font-size: 1.1rem;
+  }
+  
+  h5{
+      line-height: 1.4;
+  }
+  
+  img{
+      display: block;
+      object-fit: cover;
+      width: 100%;
+  }
+  
+  section{
+      margin-top: 6rem;
+  }
+  
+  .container{
+      width: var(--container-width-lg);
+      margin-inline: auto;
+  }
+  
+  /* MODAL */
+/* Modal overlay */
+.ReactModal__Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black overlay */
+  z-index: 1000; /* adjust the z-index as needed */
+}
+
+/* Modal content */
+.ReactModal__Content {
+  position: fixed;
+  margin-left: 39rem;
+  margin-top: 17rem;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1001; /* ensure content is above overlay */
+  max-width: 400px; /* adjust width as needed */
+  max-height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Modal heading */
+.ReactModal__Content h2 {
+  margin-top: 0;
+}
+
+/* Modal paragraph */
+.ReactModal__Content p {
+  margin-bottom: 20px;
+}
+
+/* Modal close button */
+.modalbtn {
+  padding: 10px 20px;
+  background-color: white; /* blue color for button */
+  color: black; /* white text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Modal close button hover effect */
+.ReactModal__Content button:hover {
+  background-color: #80858a; /* darker blue color on hover */
+}

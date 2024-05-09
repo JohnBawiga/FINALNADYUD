@@ -1,0 +1,81 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+/* Admin navigation styles */
+.admin-nav {
+    background-color: #555;
+    padding: 10px 0;
+}
+
+.admin-nav-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.admin-nav-items li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.admin-nav-items li:last-child {
+    margin-right: 0;
+}
+
+.admin-nav-items li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.admin-nav-items li a.active {
+    color: yellow;
+}
+
+/* Content styles */
+.content {
+    padding: 20px;
+}
+
+.article-form label {
+    font-weight: bold;
+}
+
+.article-form input[type="text"],
+.article-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.article-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.article-form button:hover {
+    background-color: #555;
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}

@@ -1,0 +1,103 @@
+.Snav .active{
+    color:  #E1AC00;
+}
+
+.Snav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: #690202;
+    position: sticky;
+    top: 0;
+}
+
+.nav__logo {
+    width: 32rem;
+    display: block;
+    margin-left: 2rem;
+    margin-top: 5px;
+}
+
+.Snav ul{
+    display: flex;
+}
+
+.Snav ul{
+    display: flex;
+}
+.Snav ul li{
+    list-style: none;
+}
+
+.Snav ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    font-size: 17px;
+    margin-right: 3rem;
+}
+
+.Snav ul li a:hover{
+    color: #E1AC00;
+}
+
+
+.Snav .menu{
+    display: none;
+    position: absolute;
+    top: 0.8rem;
+    right: 1.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 1.8rem;
+}
+
+.Snav .menu span{
+    height: 0.4rem;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.2rem;
+}
+
+
+@media (max-width: 480px) {
+    .Snav .menu{
+        display: flex;
+    }
+
+    .Snav{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .Snav .nav__logo{
+        width: 10rem;
+        margin-left: 0.8rem;
+    }
+
+    .Snav ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+
+    .Snav ul.open {
+        display: flex;
+    }
+
+    .Snav ul li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .Snav ul li a{
+        margin: 0.2rem 0.5rem;
+    }
+    .Snav ul li a:hover{
+        color: #E1AC00;
+    }
+}

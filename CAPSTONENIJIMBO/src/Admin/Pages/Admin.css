@@ -1,0 +1,380 @@
+/********************** ANNOUNCEMNT **********************/
+.admin-announcements{
+    display: grid;
+    grid-template-columns: repeat( 1fr);
+    gap: 3rem;
+    padding-bottom: 3rem;
+    margin-top: 2rem;
+    margin-left: 4rem ;
+    margin-right: 4rem;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.announcement{
+    background: var(--color-white);
+    padding: 1rem;
+    border-radius: var(--radius-4);
+    padding-bottom: 2rem;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.announcement-image{
+    border-radius: var(--radius-3);
+    overflow: hidden;
+    height: 25rem;
+}
+
+.announcement-content{
+    margin-top: .5rem;
+}
+
+.linkad{
+    font-size: 20px;
+    background-color: #E1AC00;
+    border-radius: 20px;
+    padding: 7px;
+    color: #f9f9f9;
+}
+.notice {
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.debtns{
+    display: flex; /* Ensure buttons are in a row */
+    justify-content: flex-end; /* Align buttons to the end of the row */
+    margin-bottom: .5rem;
+    gap: .5rem;
+    margin-right: 1rem;
+}
+
+.deletebtn{
+    background-color: red;
+    padding: 5px;
+    font-size: 23px;
+    border-radius: 10px;
+
+}
+
+.editbtn{
+    background-color: rgb(46, 224, 46);
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+
+}
+.edittitle {
+  z-index: 2; /* Ensure it's above other elements */
+  position: absolute;
+    text-align: center;
+    top: 10px;
+    right: 26rem;
+    font-size: 40px;
+}
+
+.edittitle1 {
+  z-index: 2; /* Ensure it's above other elements */
+  position: absolute;
+    text-align: center;
+    top: 10px;
+    right: 21rem;
+    font-size: 40px;
+}
+.btntop {
+  z-index: 2; /* Ensure it's above other elements */
+  position: absolute;
+    top: -8px;
+    right: 4.7rem;
+    font-size: 40px;
+}
+.deletebtn,
+.editbtn {
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #ff0000; /* Example background color */
+  color: #ffffff; /* Example text color */
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px; /* Add margin between the buttons */
+}
+
+.deletebtn:hover,
+.editbtn:hover {
+  cursor: pointer;
+  background-color: #cc0000; /* Example hover background color */
+}
+
+.modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8rem;
+    margin-top: 2.5rem;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.modalContent{
+    background-color: #fefefe;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 1000px;
+      max-height: 1000px;
+      width: 90%; /* Adjust width as needed */
+      height: 80%; /* Adjust height as needed */
+      overflow-y: auto;
+      position: fixed;
+      margin-top: 5rem;
+    
+}
+
+.closeButton{
+    position: absolute;
+    margin-right: 1rem;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    z-index: 2;
+}
+
+.edittitle{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .anntitle{
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 25rem;
+  }
+
+  .anndesc {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+    vertical-align: top;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+    overflow: scroll;
+    background: var(--color-white);
+    height: 10rem !important;
+  }
+  
+  .anndesc:focus {
+    outline: none;
+  }
+  
+  
+
+  .savebtn {
+    align-self: center;
+    margin-top: 2rem;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 20rem; /* Adjust the width as needed */
+    background-color: #E1AC00; /* Blue color */
+    color: #fff;
+  }
+  
+  .inputs button:last-child {
+    margin-bottom: 0; /* Remove bottom margin for the last button */
+  }
+  
+  .inputs button:hover {
+    background-color: #ac8403; /* Darker blue on hover */
+  }
+
+  .addfile{
+    margin-top: 1.5rem;
+  }
+  
+
+  .createanntitle{
+    margin-left: -19rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;;
+  }
+
+  .titleinputs{
+    width: 20rem;
+    height: 2.5rem;
+  }
+
+  .addimage{
+    margin-top: 1rem;
+    margin-left: -21rem;
+  }
+
+  .createbtn{
+    margin-top: 1.5rem;
+    width: 12rem;
+    height: 2.5rem;
+    border-radius: 49px;
+    background-color: #E1AC00;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* Modal Styling */
+.modal1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .message{
+    text-align: center;
+    margin-top: .4rem;
+    color: white;
+  }
+  
+  /* Modal Content */
+  .modal-content1 {
+    background-color: #E1AC00;
+    padding: 15px;
+    width: 40%; /* Adjust as needed */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Close Button */
+  .close1 {
+    color: black;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close1:hover,
+  .close1:focus {
+    color: black;
+    text-decoration: none;
+  }
+  
+  
+/* Delete Notice Modal Styling */
+.modalD {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Delete Notice Modal Content */
+  .modalContentD {
+    background-color: #E1AC00;
+    padding: 20px;
+    width: 40%; /* Adjust as needed */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Close Button for Delete Notice Modal */
+  .closeButtonD {
+    color: black;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .closeButtonD:hover,
+  .closeButtonD:focus {
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* Delete Options */
+  .deleteOptions {
+    margin-top: 20px;
+  }
+  
+  /* Confirm Delete Button */
+  .confirmDelete {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .confirmDelete:hover {
+    background-color: #c82333;
+  }
+  
+  /* Cancel Delete Button */
+  .cancelDelete {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cancelDelete:hover {
+    background-color: #5a6268;
+  }
+  
+
+.modalContentz{
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1000px;
+    max-height: 1000px;
+    width: 90%; /* Adjust width as needed */
+    height: 75%; /* Adjust height as needed */
+    overflow-y: auto;
+    position: fixed;
+    margin-top: 2rem;
+  
+}
+
+.debtns {
+  margin-right: 10px; /* Adjust margin as needed */
+  size: 10px;
+}
+
+.closeButton {
+  margin-left: auto; /* Push closeButton to the right */
+}

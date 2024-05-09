@@ -1,0 +1,50 @@
+.create-announcement {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .create-announcement .container {
+    width: 50rem;
+    margin-top: -5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .create-announcement_form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .create-announcement_form .form-row {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center; /* Align items vertically in the row */
+    margin-top: 2rem;
+  }
+  
+  .create-announcement_form .form-row input[type="text"] {
+    flex: 2; /* Make the title input wider */
+    width: 405px;
+    height: 2.5rem;
+    text-align: center;
+    /* margin-left: -2rem; */
+  }
+  
+  .create-announcement_form .form-row input[type="date"] {
+    flex: 1; /* Let the date input take up less space */
+    width: 200px;
+    height: 2.5rem;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+  }
+
+
+  .ql-editor {
+    overflow: scroll;
+    background: white;
+    height: 10rem !important;
+    width: 100%;
+  }
+  
